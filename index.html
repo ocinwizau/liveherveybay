@@ -115,8 +115,36 @@
     .badge.free { background: #E5F7EE; color: #4A9A68; border-color: #B8E4CC; }
 
     .stars { color: #F0B040; font-size: 11px; }
-    .rating { font-family: Arial, sans-serif; font-size: 12px; color: var(--muted); display: block; }
+    .rating { font-family: Arial, sans-serif; font-size: 12px; color: var(--muted); display: block; margin-bottom: 10px; }
     .no-results { display: none; padding: 40px 0; text-align: center; font-family: Arial, sans-serif; font-size: 14px; color: var(--light); }
+
+    /* CTA buttons */
+    .cta-btn {
+      display: inline-block;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: bold;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.15s;
+      white-space: nowrap;
+    }
+    .cta-btn.primary {
+      background: var(--ocean);
+      color: #fff !important;
+      border: none;
+    }
+    .cta-btn.primary:hover { background: var(--ocean-dk); text-decoration: none; }
+    .cta-btn.secondary {
+      background: transparent;
+      color: var(--ocean-dk) !important;
+      border: 1px solid var(--ocean);
+    }
+    .cta-btn.secondary:hover { background: var(--sky); text-decoration: none; }
+    .cta-wrap { display: flex; flex-direction: column; gap: 7px; margin-top: 4px; }
 
     /* PHOTO NOTE banner */
     .photo-note {
@@ -243,7 +271,7 @@
       </div>
 
       <!-- WHALE WATCHING -->
-      <div class="listing featured-row" data-cat="whale" data-name="Freedom Ecotours">
+      <div class="listing" data-cat="whale" data-name="Freedom Ecotours">
         <div class="l-photo" style="background:linear-gradient(135deg,#0a4f7e,#1a8fc4,#4fc3e8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🐋</div>
         <div>
           <div class="l-cat">Whale Watching</div>
@@ -256,8 +284,12 @@
           </div>
         </div>
         <div class="l-right">
-          <span class="badge featured">Featured</span>
+          
           <span class="rating"><span class="stars">★★★★★</span> 4.9</span>
+          <div class="cta-wrap">
+            <a href="https://freedomwhalewatch.com.au/book/" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
+            <a href="https://freedomwhalewatch.com.au" target="_blank" rel="noopener" class="cta-btn secondary">Visit Website</a>
+          </div>
         </div>
       </div>
 
@@ -276,11 +308,14 @@
         <div class="l-right">
           <span class="badge">Whale Watching</span>
           <span class="rating"><span class="stars">★★★★★</span> 4.8</span>
+          <div class="cta-wrap">
+            <a href="https://www.herveybayecomarinetours.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
+          </div>
         </div>
       </div>
 
       <!-- TOURS -->
-      <div class="listing featured-row" data-cat="tours" data-name="K'gari Fraser Island Day Tours">
+      <div class="listing" data-cat="tours" data-name="K'gari Fraser Island Day Tours">
         <div class="l-photo" style="background:linear-gradient(135deg,#1a5c2e,#2d8f52,#5abf7a);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🏝️</div>
         <div>
           <div class="l-cat">Tours & Day Trips</div>
@@ -293,8 +328,12 @@
           </div>
         </div>
         <div class="l-right">
-          <span class="badge featured">Featured</span>
+          
           <span class="rating"><span class="stars">★★★★★</span> 4.9</span>
+          <div class="cta-wrap">
+            <a href="https://www.fraserislandco.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
+            <a href="https://www.fraserislandco.com.au" target="_blank" rel="noopener" class="cta-btn secondary">Visit Website</a>
+          </div>
         </div>
       </div>
 
@@ -313,6 +352,9 @@
         <div class="l-right">
           <span class="badge">Adventure</span>
           <span class="rating"><span class="stars">★★★★★</span> 4.7</span>
+          <div class="cta-wrap">
+            <a href="https://www.herveybaywatersports.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
+          </div>
         </div>
       </div>
 
@@ -324,14 +366,18 @@
           <h3><a href="https://www.frasercoast.qld.gov.au/botanic-gardens" target="_blank" rel="noopener">Hervey Bay Botanic Gardens</a></h3>
           <p class="l-desc">Eighteen hectares of beautiful Queensland gardens with native flora, themed displays, tranquil ponds, an Orchid House, and shaded walking trails. A peaceful free attraction for all ages.</p>
           <div class="l-meta">
-            <span>📍 Elizabeth St, Urangan QLD 4655</span>
+            <span>📍 62-105 Elizabeth St, Urangan QLD 4655</span>
             <span>💰 Free entry</span>
             <span>⏱ Daily 7am–6pm</span>
+            <span>📞 (07) 4197 4444</span>
           </div>
         </div>
         <div class="l-right">
           <span class="badge free">Free</span>
           <span class="rating"><span class="stars">★★★★☆</span> 4.6</span>
+          <div class="cta-wrap">
+            <a href="https://www.frasercoast.qld.gov.au/botanic-gardens" target="_blank" rel="noopener" class="cta-btn secondary">Learn More</a>
+          </div>
         </div>
       </div>
 
@@ -368,6 +414,9 @@
         <div class="l-right">
           <span class="badge free">Free</span>
           <span class="rating"><span class="stars">★★★★☆</span> 4.7</span>
+          <div class="cta-wrap">
+            <a href="https://www.visitfrasercoast.com/destination/hervey-bay/" target="_blank" rel="noopener" class="cta-btn secondary">Visitor Info</a>
+          </div>
         </div>
       </div>
 
@@ -375,7 +424,7 @@
         <div class="l-photo" style="background:linear-gradient(135deg,#1a4a8c,#2870c4,#5aaee8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🌅</div>
         <div>
           <div class="l-cat">Beaches</div>
-          <h3><a href="https://www.visitfrasercoast.com/destination/hervey-bay/" target="_blank" rel="noopener">Urangan Pier &amp; Beach & Beach</a></h3>
+          <h3><a href="https://www.visitfrasercoast.com/destination/hervey-bay/" target="_blank" rel="noopener">Urangan Pier &amp; Beach</a></h3>
           <p class="l-desc">Walk one of Queensland's longest timber piers — 868 metres into the bay. A favourite for fishing, sunset watching, and dolphin spotting. Schools of fish and rays are visible in the clear water below.</p>
           <div class="l-meta">
             <span>📍 Pulgul St, Urangan QLD 4655</span>
@@ -386,11 +435,14 @@
         <div class="l-right">
           <span class="badge free">Free</span>
           <span class="rating"><span class="stars">★★★★☆</span> 4.6</span>
+          <div class="cta-wrap">
+            <a href="https://www.visitfrasercoast.com/destination/hervey-bay/" target="_blank" rel="noopener" class="cta-btn secondary">Visitor Info</a>
+          </div>
         </div>
       </div>
 
       <!-- FAMILY -->
-      <div class="listing featured-row" data-cat="family" data-name="Reefworld Aquarium Hervey Bay">
+      <div class="listing" data-cat="family" data-name="Reefworld Aquarium Hervey Bay">
         <div class="l-photo" style="background:linear-gradient(135deg,#083a6e,#0d6aaa,#1ab0d8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🐠</div>
         <div>
           <div class="l-cat">Family Activities</div>
@@ -402,8 +454,12 @@
           </div>
         </div>
         <div class="l-right">
-          <span class="badge featured">Featured</span>
+          
           <span class="rating"><span class="stars">★★★★☆</span> 4.5</span>
+          <div class="cta-wrap">
+            <a href="https://www.reefworldaquarium.com.au" target="_blank" rel="noopener" class="cta-btn primary">Plan Visit →</a>
+            <a href="tel:0741289828" class="cta-btn secondary">📞 Call</a>
+          </div>
         </div>
       </div>
 
@@ -422,11 +478,14 @@
         <div class="l-right">
           <span class="badge">Family</span>
           <span class="rating"><span class="stars">★★★★☆</span> 4.7</span>
+          <div class="cta-wrap">
+            <a href="https://www.aquavue.com.au" target="_blank" rel="noopener" class="cta-btn primary">Visit Website →</a>
+          </div>
         </div>
       </div>
 
       <!-- DINING -->
-      <div class="listing featured-row" data-cat="dining" data-name="Coast Restaurant Bar Hervey Bay">
+      <div class="listing" data-cat="dining" data-name="Coast Restaurant Bar Hervey Bay">
         <div class="l-photo" style="background:linear-gradient(135deg,#6a2010,#b84020,#e07050);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🍽️</div>
         <div>
           <div class="l-cat">Dining</div>
@@ -439,8 +498,12 @@
           </div>
         </div>
         <div class="l-right">
-          <span class="badge featured">Featured</span>
+          
           <span class="rating"><span class="stars">★★★★★</span> 4.8</span>
+          <div class="cta-wrap">
+            <a href="https://www.coastrestaurantherveybay.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book a Table →</a>
+            <a href="tel:0741255599" class="cta-btn secondary">📞 (07) 4125 5599</a>
+          </div>
         </div>
       </div>
 
@@ -459,6 +522,9 @@
         <div class="l-right">
           <span class="badge">Dining</span>
           <span class="rating"><span class="stars">★★★★☆</span> 4.5</span>
+          <div class="cta-wrap">
+            <a href="https://www.facebook.com/cafebalaena" target="_blank" rel="noopener" class="cta-btn secondary">View Menu</a>
+          </div>
         </div>
       </div>
 
@@ -477,6 +543,9 @@
         <div class="l-right">
           <span class="badge">Dining</span>
           <span class="rating"><span class="stars">★★★★☆</span> 4.6</span>
+          <div class="cta-wrap">
+            <a href="https://www.enzosonthebeach.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book a Table →</a>
+          </div>
         </div>
       </div>
 
@@ -496,6 +565,9 @@
         <div class="l-right">
           <span class="badge">Adventure</span>
           <span class="rating"><span class="stars">★★★★★</span> 4.8</span>
+          <div class="cta-wrap">
+            <a href="https://www.herveybaywatersports.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
+          </div>
         </div>
       </div>
 
@@ -515,6 +587,9 @@
         <div class="l-right">
           <span class="badge">Culture</span>
           <span class="rating"><span class="stars">★★★★★</span> 4.7</span>
+          <div class="cta-wrap">
+            <a href="https://www.herveybaymuseum.com.au" target="_blank" rel="noopener" class="cta-btn primary">Plan Visit →</a>
+          </div>
         </div>
       </div>
 
@@ -549,21 +624,20 @@
     <div class="wrap">
       <div class="submit-grid">
         <div class="s-copy">
-          <h2>List Your Hervey Bay Business or Experience</h2>
-          <p>Reach thousands of visitors and new residents actively searching for things to do in Hervey Bay. Get your attraction, tour, restaurant, or experience in front of the right people — with your own photo and direct link.</p>
+          <h2>Add Your Hervey Bay Business — It's Free</h2>
+          <p>LiveHerveyBay.com is building the most complete local guide to Hervey Bay. List your business, attraction, tour, or experience for free — no credit card, no catch. We're focused on being genuinely useful to visitors and locals first.</p>
           <ul class="b-list">
-            <li>Appear in front of 791,000+ annual Hervey Bay visitors</li>
-            <li>Your own photo, description and direct website link</li>
-            <li>Featured placement options for maximum visibility</li>
-            <li>Reach new residents actively looking for local businesses</li>
-            <li>Basic listings always free — no credit card required</li>
+            <li>Listed in front of visitors actively searching for things to do</li>
+            <li>Your own photo, description, and direct link to your website</li>
+            <li>Reach new residents exploring what Hervey Bay has to offer</li>
+            <li>100% free — no credit card, no lock-in, no hidden fees</li>
             <li>Reviewed and published within 48 hours</li>
           </ul>
         </div>
         <div>
           <div class="form-box" id="formBox">
             <h3>Submit a Free Listing</h3>
-            <p class="form-note-top">Free to list. Your photo included. Published within 48 hours.</p>
+            <p class="form-note-top">Free to list. Always. Published within 48 hours.</p>
             <form id="listForm" onsubmit="submitForm(event)">
               <div class="f-row">
                 <div class="f-group">
@@ -655,13 +729,12 @@
           <ul>
             <li><a href="#submit">Submit a Free Listing</a></li>
             <li><a href="#submit">Featured Listings</a></li>
-            <li><a href="#submit">Advertise With Us</a></li>
             <li><a href="#submit">Contact Us</a></li>
           </ul>
         </div>
       </div>
       <div class="ft-bottom">
-        <span>© 2025 LiveHerveyBay.com — All rights reserved</span>
+        <span>© 2026 LiveHerveyBay.com — All rights reserved</span>
         <a href="#">Privacy Policy</a>
       </div>
     </div>
@@ -689,7 +762,13 @@
       const items = document.querySelectorAll('.listing');
       let n = 0;
       items.forEach(el => {
-        const txt = (el.dataset.name + ' ' + el.innerText).toLowerCase();
+        const name = (el.dataset.name || '').toLowerCase();
+        const cat = (el.dataset.cat || '').toLowerCase();
+        const desc = (el.querySelector('.l-desc') || {textContent:''}).textContent;
+        const h3 = (el.querySelector('h3') || {textContent:''}).textContent;
+        const meta = (el.querySelector('.l-meta') || {textContent:''}).textContent;
+        const lcat = (el.querySelector('.l-cat') || {textContent:''}).textContent;
+        const txt = (name+' '+cat+' '+desc+' '+h3+' '+meta+' '+lcat).toLowerCase();
         const show = txt.includes(q);
         el.style.display = show ? 'grid' : 'none';
         if (show) n++;
@@ -701,6 +780,14 @@
 
     document.getElementById('searchInput').addEventListener('keydown', e => {
       if (e.key === 'Enter') doSearch();
+    });
+
+    document.getElementById('searchInput').addEventListener('input', e => {
+      if (e.target.value.trim() === '') {
+        filterCat('all', document.querySelector('.cat'));
+      } else {
+        doSearch();
+      }
     });
 
     function submitLead(e) {
