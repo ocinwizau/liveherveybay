@@ -23,8 +23,6 @@
     body { font-family: Georgia, serif; background: var(--white); color: var(--body); font-size: 16px; line-height: 1.7; }
     a { color: var(--ocean-dk); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    /* NAV */
     nav { background: #fff; border-bottom: 1px solid var(--border); padding: 0 5%; display: flex; align-items: center; justify-content: space-between; height: 54px; position: sticky; top: 0; z-index: 99; }
     .logo { font-family: Georgia, serif; font-size: 18px; color: var(--slate); text-decoration: none; }
     .logo span { color: var(--ocean); }
@@ -33,8 +31,6 @@
     .nav-links a:hover { color: var(--slate); }
     .nav-btn { background: var(--ocean) !important; color: #fff !important; padding: 7px 16px; border-radius: 2px; font-size: 12px !important; font-weight: bold !important; letter-spacing: 0.04em; text-transform: uppercase; }
     .nav-btn:hover { background: var(--ocean-dk) !important; text-decoration: none !important; }
-
-    /* HERO */
     .hero { background: linear-gradient(160deg, #DDF0FA 0%, #EEF8FD 50%, #F8FCFE 100%); border-bottom: 1px solid var(--border); padding: 56px 5% 52px; text-align: center; }
     .hero-tag { font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ocean-dk); display: block; margin-bottom: 14px; }
     .hero h1 { font-size: clamp(26px, 4vw, 42px); color: var(--slate); font-weight: normal; line-height: 1.25; margin-bottom: 12px; }
@@ -44,64 +40,26 @@
     .search-bar input::placeholder { color: var(--light); }
     .search-bar button { padding: 11px 20px; background: var(--ocean); color: #fff; border: none; font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.05em; text-transform: uppercase; cursor: pointer; }
     .search-bar button:hover { background: var(--ocean-dk); }
-
-    /* STATS */
     .stats { background: var(--ocean); display: flex; justify-content: center; }
     .stat { padding: 13px 36px; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); }
     .stat:last-child { border-right: none; }
     .stat-n { font-family: Georgia, serif; font-size: 21px; color: #fff; display: block; }
     .stat-l { font-family: Arial, sans-serif; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.75); }
-
-    /* CATS */
     .cats { background: #fff; border-bottom: 1px solid var(--border); padding: 0 5%; display: flex; overflow-x: auto; }
     .cats::-webkit-scrollbar { display: none; }
     .cat { font-family: Arial, sans-serif; font-size: 12px; font-weight: bold; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); padding: 13px 18px; border: none; border-bottom: 3px solid transparent; background: none; cursor: pointer; white-space: nowrap; transition: color 0.15s; }
     .cat:hover { color: var(--slate); }
     .cat.active { color: var(--ocean-dk); border-bottom-color: var(--ocean); }
-
-    /* LAYOUT */
     .wrap { max-width: 1060px; margin: 0 auto; padding: 0 5%; }
     .section { padding: 44px 0; }
     .section-hd { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid var(--sky); }
     .section-hd h2 { font-size: 20px; font-weight: normal; color: var(--slate); }
     .section-hd .count { font-family: Arial, sans-serif; font-size: 12px; color: var(--light); }
-
-    /* LISTING ROW — now 3 columns with photo */
-    .listing {
-      display: grid;
-      grid-template-columns: 120px 1fr 110px;
-      gap: 20px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--border);
-      align-items: start;
-    }
+    .listing { display: grid; grid-template-columns: 120px 1fr 110px; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--border); align-items: start; }
     .listing:last-of-type { border-bottom: none; }
-    .listing.featured-row {
-      background: #F2FAFD;
-      margin: 0 -14px;
-      padding: 16px 14px;
-      border-bottom: 1px solid #D8EFF8;
-      border-left: 3px solid var(--ocean);
-    }
-
-    /* Photo thumbnail */
-    .l-photo {
-      width: 120px;
-      height: 84px;
-      border-radius: 3px;
-      overflow: hidden;
-      flex-shrink: 0;
-      background: var(--sky);
-    }
-    .l-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s ease;
-    }
+    .l-photo { width: 120px; height: 84px; border-radius: 3px; overflow: hidden; flex-shrink: 0; background: var(--sky); }
+    .l-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
     .listing:hover .l-photo img { transform: scale(1.04); }
-
     .l-cat { font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ocean-dk); margin-bottom: 4px; }
     .listing h3 { font-size: 17px; font-weight: normal; color: var(--slate); margin-bottom: 5px; line-height: 1.3; }
     .listing h3 a { color: var(--slate); }
@@ -109,56 +67,18 @@
     .l-desc { font-family: Arial, sans-serif; font-size: 13px; color: var(--body); line-height: 1.6; margin-bottom: 9px; }
     .l-meta { display: flex; flex-wrap: wrap; gap: 12px; font-family: Arial, sans-serif; font-size: 11px; color: var(--light); }
     .l-right { text-align: right; }
-
     .badge { display: inline-block; font-family: Arial, sans-serif; font-size: 10px; font-weight: bold; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 9px; border-radius: 2px; margin-bottom: 8px; background: var(--sky); color: var(--muted); border: 1px solid var(--border); }
-    .badge.featured { background: #D8EFF8; color: var(--ocean-dk); border-color: #B5DCF0; }
     .badge.free { background: #E5F7EE; color: #4A9A68; border-color: #B8E4CC; }
-
     .stars { color: #F0B040; font-size: 11px; }
     .rating { font-family: Arial, sans-serif; font-size: 12px; color: var(--muted); display: block; margin-bottom: 10px; }
     .no-results { display: none; padding: 40px 0; text-align: center; font-family: Arial, sans-serif; font-size: 14px; color: var(--light); }
-
-    /* CTA buttons */
-    .cta-btn {
-      display: inline-block;
-      font-family: Arial, sans-serif;
-      font-size: 11px;
-      font-weight: bold;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      padding: 7px 14px;
-      border-radius: 2px;
-      text-decoration: none;
-      transition: background 0.15s;
-      white-space: nowrap;
-    }
-    .cta-btn.primary {
-      background: var(--ocean);
-      color: #fff !important;
-      border: none;
-    }
+    .cta-btn { display: inline-block; font-family: Arial, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 0.04em; text-transform: uppercase; padding: 7px 14px; border-radius: 2px; text-decoration: none; transition: background 0.15s; white-space: nowrap; }
+    .cta-btn.primary { background: var(--ocean); color: #fff !important; border: none; }
     .cta-btn.primary:hover { background: var(--ocean-dk); text-decoration: none; }
-    .cta-btn.secondary {
-      background: transparent;
-      color: var(--ocean-dk) !important;
-      border: 1px solid var(--ocean);
-    }
+    .cta-btn.secondary { background: transparent; color: var(--ocean-dk) !important; border: 1px solid var(--ocean); }
     .cta-btn.secondary:hover { background: var(--sky); text-decoration: none; }
     .cta-wrap { display: flex; flex-direction: column; gap: 7px; margin-top: 4px; }
-
-    /* PHOTO NOTE banner */
-    .photo-note {
-      background: #FFF8E6;
-      border: 1px solid #F5DFA0;
-      border-radius: 3px;
-      padding: 10px 16px;
-      margin-bottom: 24px;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      color: #7A6020;
-    }
-
-    /* SUBMIT */
+    .photo-note { background: #FFF8E6; border: 1px solid #F5DFA0; border-radius: 3px; padding: 10px 16px; margin-bottom: 24px; font-family: Arial, sans-serif; font-size: 12px; color: #7A6020; }
     .submit-wrap { background: var(--sky); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
     .submit-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; padding: 56px 0; align-items: start; }
     .s-copy h2 { font-size: clamp(21px, 3vw, 28px); font-weight: normal; color: var(--slate); margin-bottom: 12px; line-height: 1.3; }
@@ -166,8 +86,6 @@
     .b-list { list-style: none; display: flex; flex-direction: column; gap: 9px; }
     .b-list li { font-family: Arial, sans-serif; font-size: 13px; color: var(--body); padding-left: 20px; position: relative; }
     .b-list li::before { content: "✓"; position: absolute; left: 0; color: var(--ocean-dk); font-weight: bold; }
-
-    /* FORM */
     .form-box { background: #fff; border: 1px solid var(--border); padding: 30px; }
     .form-box h3 { font-size: 19px; font-weight: normal; color: var(--slate); margin-bottom: 4px; }
     .form-note-top { font-family: Arial, sans-serif; font-size: 12px; color: var(--light); margin-bottom: 22px; }
@@ -183,8 +101,6 @@
     .success-msg { display: none; text-align: center; padding: 40px 16px; }
     .success-msg h3 { font-size: 21px; font-weight: normal; color: var(--slate); margin-bottom: 8px; }
     .success-msg p { font-family: Arial, sans-serif; font-size: 13px; color: var(--body); }
-
-    /* FOOTER */
     footer { background: #4A6D8C; color: rgba(255,255,255,0.65); }
     .ft { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; padding: 44px 0 36px; }
     .ft-brand p { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.7; margin-top: 12px; max-width: 280px; }
@@ -197,12 +113,9 @@
     .ft-col ul li a:hover { color: #fff; }
     .ft-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 16px 0; display: flex; justify-content: space-between; font-family: Arial, sans-serif; font-size: 11px; }
     .ft-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; }
-
-    /* MOBILE */
     @media (max-width: 700px) {
       .nav-links { display: none; }
       .listing { grid-template-columns: 1fr; }
-      .listing.featured-row { grid-template-columns: 1fr; }
       .l-photo { width: 100%; height: 160px; }
       .l-right { text-align: left; }
       .submit-grid { grid-template-columns: 1fr; gap: 32px; }
@@ -216,7 +129,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
     <a href="/" class="logo">Live<span>HerveyBay</span></a>
     <ul class="nav-links">
@@ -226,7 +138,6 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
   <div class="hero">
     <span class="hero-tag">📍 Hervey Bay, Queensland</span>
     <h1>Things To Do in Hervey Bay</h1>
@@ -237,7 +148,6 @@
     </div>
   </div>
 
-  <!-- STATS -->
   <div class="stats">
     <div class="stat"><span class="stat-n">40+</span><span class="stat-l">Local Listings</span></div>
     <div class="stat"><span class="stat-n">8</span><span class="stat-l">Categories</span></div>
@@ -245,7 +155,6 @@
     <div class="stat"><span class="stat-n">Jul–Nov</span><span class="stat-l">Whale Season</span></div>
   </div>
 
-  <!-- CATEGORY TABS -->
   <div class="cats">
     <button class="cat active" onclick="filterCat('all',this)">All</button>
     <button class="cat" onclick="filterCat('whale',this)">🐋 Whale Watching</button>
@@ -258,33 +167,25 @@
     <button class="cat" onclick="filterCat('arts',this)">🎨 Arts</button>
   </div>
 
-  <!-- LISTINGS -->
   <div class="wrap">
     <div class="section" id="listings">
       <div class="section-hd">
         <h2>Things To Do in Hervey Bay</h2>
         <span class="count" id="countLabel">15 listings</span>
       </div>
-
       <div class="photo-note">
-        📸 <strong>Business owners:</strong> Photos shown are representative placeholders. <a href="#submit">Submit your listing</a> to have your own photos featured here.
+        📸 Photos are representative stock images. <strong>Business owners:</strong> <a href="#submit">submit your listing</a> to have your own photos featured.
       </div>
 
-      <!-- WHALE WATCHING -->
       <div class="listing" data-cat="whale" data-name="Freedom Ecotours">
-        <div class="l-photo" style="background:linear-gradient(135deg,#0a4f7e,#1a8fc4,#4fc3e8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🐋</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=300&q=80" alt="Humpback whale in Hervey Bay" loading="lazy" /></div>
         <div>
           <div class="l-cat">Whale Watching</div>
-          <h3><a href="https://freedomwhalewatch.com.au" target="_blank">Freedom Ecotours</a></h3>
+          <h3><a href="https://freedomwhalewatch.com.au" target="_blank" rel="noopener">Freedom Ecotours</a></h3>
           <p class="l-desc">Hervey Bay's premier whale watching experience. Award-winning eco-certified tours with expert naturalist guides. Get up close with humpback whales in their protected natural sanctuary.</p>
-          <div class="l-meta">
-            <span>📍 Urangan Marina, Hervey Bay</span>
-            <span>⏱ 4–5 hours</span>
-            <span>📅 July – November</span>
-          </div>
+          <div class="l-meta"><span>📍 Urangan Marina, Hervey Bay</span><span>⏱ 4–5 hours</span><span>📅 July – November</span></div>
         </div>
         <div class="l-right">
-          
           <span class="rating"><span class="stars">★★★★★</span> 4.9</span>
           <div class="cta-wrap">
             <a href="https://freedomwhalewatch.com.au/book/" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
@@ -294,16 +195,12 @@
       </div>
 
       <div class="listing" data-cat="whale" data-name="Hervey Bay Eco Marine Tours">
-        <div class="l-photo" style="background:linear-gradient(135deg,#0d3d6b,#1474a8,#3aaad0);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🐳</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=300&q=80" alt="Whale watching tour boat" loading="lazy" /></div>
         <div>
           <div class="l-cat">Whale Watching</div>
           <h3><a href="https://www.herveybayecomarinetours.com.au" target="_blank" rel="noopener">Hervey Bay Eco Marine Tours</a></h3>
           <p class="l-desc">Small-group whale watching with a personal experience on the water. Intimate encounters with humpbacks in Hervey Bay's calm, sheltered bay on their annual migration route.</p>
-          <div class="l-meta">
-            <span>📍 Urangan Pier, Hervey Bay</span>
-            <span>⏱ Half day</span>
-            <span>📅 July – November</span>
-          </div>
+          <div class="l-meta"><span>📍 Urangan Pier, Hervey Bay</span><span>⏱ Half day</span><span>📅 July – November</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Whale Watching</span>
@@ -314,21 +211,15 @@
         </div>
       </div>
 
-      <!-- TOURS -->
       <div class="listing" data-cat="tours" data-name="K'gari Fraser Island Day Tours">
-        <div class="l-photo" style="background:linear-gradient(135deg,#1a5c2e,#2d8f52,#5abf7a);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🏝️</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&q=80" alt="K'gari Fraser Island sand and beach" loading="lazy" /></div>
         <div>
           <div class="l-cat">Tours & Day Trips</div>
           <h3><a href="https://www.fraserislandco.com.au" target="_blank" rel="noopener">K'gari (Fraser Island) Day Tours</a></h3>
           <p class="l-desc">Explore the world's largest sand island on a fully guided day tour from Hervey Bay. Visit the crystal-clear Lake McKenzie, the iconic Maheno Shipwreck, Eli Creek, and 75 Mile Beach.</p>
-          <div class="l-meta">
-            <span>📍 Departs Urangan Marina</span>
-            <span>⏱ Full day</span>
-            <span>💰 From $160/person</span>
-          </div>
+          <div class="l-meta"><span>📍 Departs Urangan Marina</span><span>⏱ Full day</span><span>💰 From $160/person</span></div>
         </div>
         <div class="l-right">
-          
           <span class="rating"><span class="stars">★★★★★</span> 4.9</span>
           <div class="cta-wrap">
             <a href="https://www.fraserislandco.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book Now →</a>
@@ -338,16 +229,12 @@
       </div>
 
       <div class="listing" data-cat="tours" data-name="Great Sandy Straits Kayak Tours">
-        <div class="l-photo" style="background:linear-gradient(135deg,#0a4a6e,#1880b0,#3ab5d8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🚣</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&q=80" alt="Kayaking through Great Sandy Straits" loading="lazy" /></div>
         <div>
           <div class="l-cat">Tours & Day Trips</div>
           <h3><a href="https://www.herveybaywatersports.com.au" target="_blank" rel="noopener">Great Sandy Straits Kayak Tours</a></h3>
           <p class="l-desc">Paddle through the pristine Great Sandy Straits and spot dugongs, sea turtles, and dolphins. Small-group guided kayak adventures through one of Queensland's most biodiverse marine areas.</p>
-          <div class="l-meta">
-            <span>📍 Urangan, Hervey Bay</span>
-            <span>⏱ 2–3 hours</span>
-            <span>👨‍👩‍👧 All skill levels</span>
-          </div>
+          <div class="l-meta"><span>📍 Urangan, Hervey Bay</span><span>⏱ 2–3 hours</span><span>👨‍👩‍👧 All skill levels</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Adventure</span>
@@ -358,19 +245,13 @@
         </div>
       </div>
 
-      <!-- NATURE -->
       <div class="listing" data-cat="nature" data-name="Hervey Bay Botanic Gardens">
-        <div class="l-photo" style="background:linear-gradient(135deg,#1f5c1a,#3a9c2e,#72cc58);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🌺</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=300&q=80" alt="Tropical flowers at Hervey Bay Botanic Gardens" loading="lazy" /></div>
         <div>
           <div class="l-cat">Nature & Parks</div>
           <h3><a href="https://www.frasercoast.qld.gov.au/botanic-gardens" target="_blank" rel="noopener">Hervey Bay Botanic Gardens</a></h3>
           <p class="l-desc">Eighteen hectares of beautiful Queensland gardens with native flora, themed displays, tranquil ponds, an Orchid House, and shaded walking trails. A peaceful free attraction for all ages.</p>
-          <div class="l-meta">
-            <span>📍 62-105 Elizabeth St, Urangan QLD 4655</span>
-            <span>💰 Free entry</span>
-            <span>⏱ Daily 7am–6pm</span>
-            <span>📞 (07) 4197 4444</span>
-          </div>
+          <div class="l-meta"><span>📍 62-105 Elizabeth St, Urangan QLD 4655</span><span>💰 Free entry</span><span>⏱ Daily 7am–6pm</span><span>📞 (07) 4197 4444</span></div>
         </div>
         <div class="l-right">
           <span class="badge free">Free</span>
@@ -382,15 +263,12 @@
       </div>
 
       <div class="listing" data-cat="nature" data-name="Eli Creek K'gari">
-        <div class="l-photo" style="background:linear-gradient(135deg,#0e5c3a,#1a9960,#3dd4a0);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🏞️</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=300&q=80" alt="Crystal clear Eli Creek" loading="lazy" /></div>
         <div>
           <div class="l-cat">Nature & Parks</div>
           <h3><a href="https://www.npsr.qld.gov.au/parks/fraser/" target="_blank" rel="noopener">Eli Creek, K'gari</a></h3>
           <p class="l-desc">Float down the clearest freshwater creek on K'gari (Fraser Island), flowing directly onto 75 Mile Beach. One of the island's most iconic natural experiences — crystal clear, cold, and unforgettable.</p>
-          <div class="l-meta">
-            <span>📍 K'gari Island (via day tour)</span>
-            <span>⏱ Via day tour from Hervey Bay</span>
-          </div>
+          <div class="l-meta"><span>📍 K'gari Island (via day tour)</span><span>⏱ Via day tour from Hervey Bay</span></div>
         </div>
         <div class="l-right">
           <span class="badge">K'gari</span>
@@ -398,18 +276,13 @@
         </div>
       </div>
 
-      <!-- BEACHES -->
       <div class="listing" data-cat="beach" data-name="Torquay Beach Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#c9a84c,#e8c56a,#f5dfa0);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🏖️</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=300&q=80" alt="Calm tropical beach Torquay Hervey Bay" loading="lazy" /></div>
         <div>
           <div class="l-cat">Beaches</div>
           <h3><a href="https://www.visitfrasercoast.com/destination/hervey-bay/" target="_blank" rel="noopener">Torquay Beach</a></h3>
           <p class="l-desc">Hervey Bay's most popular beach strip with calm, stinger-free swimming, weekend markets, beachside cafes, and the famous 16km esplanade walk. Ideal for families with young children.</p>
-          <div class="l-meta">
-            <span>📍 Charlton Esplanade, Torquay QLD 4655</span>
-            <span>💰 Free</span>
-            <span>🏊 Patrolled</span>
-          </div>
+          <div class="l-meta"><span>📍 Charlton Esplanade, Torquay QLD 4655</span><span>💰 Free</span><span>🏊 Patrolled</span></div>
         </div>
         <div class="l-right">
           <span class="badge free">Free</span>
@@ -421,16 +294,12 @@
       </div>
 
       <div class="listing" data-cat="beach" data-name="Urangan Pier Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#1a4a8c,#2870c4,#5aaee8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🌅</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?w=300&q=80" alt="Urangan Pier at sunset" loading="lazy" /></div>
         <div>
           <div class="l-cat">Beaches</div>
           <h3><a href="https://www.visitfrasercoast.com/destination/hervey-bay/" target="_blank" rel="noopener">Urangan Pier &amp; Beach</a></h3>
           <p class="l-desc">Walk one of Queensland's longest timber piers — 868 metres into the bay. A favourite for fishing, sunset watching, and dolphin spotting. Schools of fish and rays are visible in the clear water below.</p>
-          <div class="l-meta">
-            <span>📍 Pulgul St, Urangan QLD 4655</span>
-            <span>💰 Free</span>
-            <span>🎣 Fishing allowed</span>
-          </div>
+          <div class="l-meta"><span>📍 Pulgul St, Urangan QLD 4655</span><span>💰 Free</span><span>🎣 Fishing allowed</span></div>
         </div>
         <div class="l-right">
           <span class="badge free">Free</span>
@@ -441,20 +310,15 @@
         </div>
       </div>
 
-      <!-- FAMILY -->
       <div class="listing" data-cat="family" data-name="Reefworld Aquarium Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#083a6e,#0d6aaa,#1ab0d8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🐠</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1520366498724-709889c0c685?w=300&q=80" alt="Tropical fish at Reefworld Aquarium" loading="lazy" /></div>
         <div>
           <div class="l-cat">Family Activities</div>
-          <h3><a href="https://www.reefworldaquarium.com.au" target="_blank">Reefworld Aquarium</a></h3>
+          <h3><a href="https://www.reefworldaquarium.com.au" target="_blank" rel="noopener">Reefworld Aquarium</a></h3>
           <p class="l-desc">One of the world's few all-natural aquariums, using only sand-filtered seawater and natural sunlight. Home to sharks, rays, turtles, and tropical fish. Operating since 1979 right on the Urangan foreshore.</p>
-          <div class="l-meta">
-            <span>📍 Cnr Kent & Pulgul St, Urangan QLD 4655</span>
-            <span>📞 (07) 4128 9828</span>
-          </div>
+          <div class="l-meta"><span>📍 Cnr Kent &amp; Pulgul St, Urangan QLD 4655</span><span>📞 (07) 4128 9828</span></div>
         </div>
         <div class="l-right">
-          
           <span class="rating"><span class="stars">★★★★☆</span> 4.5</span>
           <div class="cta-wrap">
             <a href="https://www.reefworldaquarium.com.au" target="_blank" rel="noopener" class="cta-btn primary">Plan Visit →</a>
@@ -464,16 +328,12 @@
       </div>
 
       <div class="listing" data-cat="family" data-name="Aquavue Cafe Watersports Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#0a6080,#1098b8,#3ad0e8);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🛶</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=300&q=80" alt="Watersports at Aquavue Hervey Bay" loading="lazy" /></div>
         <div>
           <div class="l-cat">Family Activities</div>
-          <h3><a href="https://www.facebook.com/aquavueherveybay" target="_blank" rel="noopener">Aquavue Café & Watersports</a></h3>
+          <h3><a href="https://www.aquavue.com.au" target="_blank" rel="noopener">Aquavue Café &amp; Watersports</a></h3>
           <p class="l-desc">Hire kayaks, paddleboards, and pedal boats straight from the beach. Grab a coffee at the café while the kids enjoy the calm, shallow water. A genuine Hervey Bay local favourite on the Pialba foreshore.</p>
-          <div class="l-meta">
-            <span>📍 Pialba Foreshore, Hervey Bay</span>
-            <span>☕ Café on site</span>
-            <span>👨‍👩‍👧 Kid friendly</span>
-          </div>
+          <div class="l-meta"><span>📍 Pialba Foreshore, Hervey Bay</span><span>☕ Café on site</span><span>👨‍👩‍👧 Kid friendly</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Family</span>
@@ -484,21 +344,15 @@
         </div>
       </div>
 
-      <!-- DINING -->
       <div class="listing" data-cat="dining" data-name="Coast Restaurant Bar Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#6a2010,#b84020,#e07050);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🍽️</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&q=80" alt="Fine dining at Coast Restaurant" loading="lazy" /></div>
         <div>
           <div class="l-cat">Dining</div>
-          <h3><a href="https://www.coastrestaurantherveybay.com.au" target="_blank" rel="noopener">Coast Restaurant & Bar</a></h3>
+          <h3><a href="https://www.coastrestaurantherveybay.com.au" target="_blank" rel="noopener">Coast Restaurant &amp; Bar</a></h3>
           <p class="l-desc">Hervey Bay's hatted dining destination. Indulge in local Hervey Bay scallops, Fraser Island prawns, and expertly matched wines. Considered the finest dining experience on the Fraser Coast.</p>
-          <div class="l-meta">
-            <span>📍 The Marina, 3 Buccaneer Dr, Urangan QLD 4655</span>
-            <span>📞 (07) 4125 5599</span>
-            <span>🍷 Licensed</span>
-          </div>
+          <div class="l-meta"><span>📍 The Marina, 3 Buccaneer Dr, Urangan QLD 4655</span><span>📞 (07) 4125 5599</span><span>🍷 Licensed</span></div>
         </div>
         <div class="l-right">
-          
           <span class="rating"><span class="stars">★★★★★</span> 4.8</span>
           <div class="cta-wrap">
             <a href="https://www.coastrestaurantherveybay.com.au" target="_blank" rel="noopener" class="cta-btn primary">Book a Table →</a>
@@ -508,16 +362,12 @@
       </div>
 
       <div class="listing" data-cat="dining" data-name="Cafe Balaena Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#7a5010,#c08030,#e8b860);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">☕</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=300&q=80" alt="Cafe Balaena at Urangan Marina" loading="lazy" /></div>
         <div>
           <div class="l-cat">Dining</div>
           <h3><a href="https://www.facebook.com/cafebalaena" target="_blank" rel="noopener">Cafe Balaena</a></h3>
           <p class="l-desc">Easy-going café on the marina with stunning views beyond the harbour to K'gari. Known for its excellent coffee, fresh local seafood, and Queensland coastal vibe. A must-visit breakfast and lunch spot.</p>
-          <div class="l-meta">
-            <span>📍 7 Buccaneer Dr, Urangan QLD 4655</span>
-            <span>☕ Breakfast & lunch</span>
-            <span>🌅 Marina views</span>
-          </div>
+          <div class="l-meta"><span>📍 7 Buccaneer Dr, Urangan QLD 4655</span><span>☕ Breakfast &amp; lunch</span><span>🌅 Marina views</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Dining</span>
@@ -529,16 +379,12 @@
       </div>
 
       <div class="listing" data-cat="dining" data-name="Enzo's on the Beach Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#8c3a10,#d06030,#f09060);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🌊</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=300&q=80" alt="Beachfront dining at Enzo's" loading="lazy" /></div>
         <div>
           <div class="l-cat">Dining</div>
           <h3><a href="https://www.enzosonthebeach.com.au" target="_blank" rel="noopener">Enzo's on the Beach</a></h3>
           <p class="l-desc">Iconic beachfront restaurant with direct ocean views. Fresh local seafood, wood-fired pizza, and sunset cocktails on the Torquay esplanade. A beloved Hervey Bay institution — perfect for sunset dining.</p>
-          <div class="l-meta">
-            <span>📍 Charlton Esplanade, Torquay QLD 4655</span>
-            <span>🌅 Beachfront</span>
-            <span>🍷 Licensed</span>
-          </div>
+          <div class="l-meta"><span>📍 Charlton Esplanade, Torquay QLD 4655</span><span>🌅 Beachfront</span><span>🍷 Licensed</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Dining</span>
@@ -549,18 +395,13 @@
         </div>
       </div>
 
-      <!-- WATER SPORTS -->
       <div class="listing" data-cat="water" data-name="Scuba Diving Hervey Bay">
-        <div class="l-photo" style="background:linear-gradient(135deg,#0a3060,#0a60a0,#1a98d0);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🤿</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=300&q=80" alt="Scuba diving clear waters Hervey Bay" loading="lazy" /></div>
         <div>
           <div class="l-cat">Water Sports</div>
-          <h3><a href="https://www.herveybaywatersports.com.au" target="_blank" rel="noopener">Scuba Diving & Snorkelling</a></h3>
+          <h3><a href="https://www.herveybaywatersports.com.au" target="_blank" rel="noopener">Scuba Diving &amp; Snorkelling</a></h3>
           <p class="l-desc">Discover vibrant coral gardens and marine life beneath Hervey Bay's calm, protected waters. The Great Sandy Straits offers underwater caves, ledges, and shipwrecks. Courses from beginner to PADI advanced.</p>
-          <div class="l-meta">
-            <span>📍 Urangan Marina, Hervey Bay</span>
-            <span>⏱ Half or full day</span>
-            <span>🤿 All levels welcome</span>
-          </div>
+          <div class="l-meta"><span>📍 Urangan Marina, Hervey Bay</span><span>⏱ Half or full day</span><span>🤿 All levels welcome</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Adventure</span>
@@ -571,18 +412,13 @@
         </div>
       </div>
 
-      <!-- ARTS -->
       <div class="listing" data-cat="arts" data-name="Hervey Bay Historical Village Museum">
-        <div class="l-photo" style="background:linear-gradient(135deg,#4a3010,#8a6030,#c09060);display:flex;align-items:center;justify-content:center;font-size:36px;border-radius:3px;">🏛️</div>
+        <div class="l-photo"><img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=300&q=80" alt="Heritage buildings Hervey Bay Historical Village" loading="lazy" /></div>
         <div>
-          <div class="l-cat">Arts & Culture</div>
-          <h3><a href="https://www.herveybaymuseum.com.au" target="_blank" rel="noopener">Hervey Bay Historical Village & Museum</a></h3>
-          <p class="l-desc">Award-winning attraction with 31+ heritage buildings and over 20,000 exhibits. Explore 200+ years of Fraser Coast history with interactive Sunday demonstrations including blacksmithing and rope making. Allow 2–3 hours.</p>
-          <div class="l-meta">
-            <span>📍 Zephyr St, Scarness QLD 4655</span>
-            <span>⏱ Allow 2–3 hours</span>
-            <span>🎭 Demos on Sundays</span>
-          </div>
+          <div class="l-cat">Arts &amp; Culture</div>
+          <h3><a href="https://www.herveybaymuseum.com.au" target="_blank" rel="noopener">Hervey Bay Historical Village &amp; Museum</a></h3>
+          <p class="l-desc">Award-winning attraction with 31+ heritage buildings and over 20,000 exhibits. Explore 200+ years of Fraser Coast history with interactive Sunday demonstrations including blacksmithing and rope making.</p>
+          <div class="l-meta"><span>📍 Zephyr St, Scarness QLD 4655</span><span>⏱ Allow 2–3 hours</span><span>🎭 Demos on Sundays</span></div>
         </div>
         <div class="l-right">
           <span class="badge">Culture</span>
@@ -597,7 +433,6 @@
     </div>
   </div>
 
-
   <!-- LEAD CAPTURE -->
   <div style="background:linear-gradient(135deg,#1a7aaa,#3aaedb);padding:48px 5%;">
     <div style="max-width:620px;margin:0 auto;text-align:center;">
@@ -605,16 +440,10 @@
       <h2 style="font-family:Georgia,serif;font-size:clamp(22px,3vw,30px);font-weight:normal;color:#fff;margin-bottom:10px;line-height:1.3;">Get the Free Hervey Bay Insider Guide</h2>
       <p style="font-family:Arial,sans-serif;font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:24px;line-height:1.65;">Best beaches, hidden dining spots, whale watching tips, and what to do each season — delivered straight to your inbox. No spam, unsubscribe anytime.</p>
       <form id="leadForm" onsubmit="submitLead(event)" style="display:flex;gap:0;max-width:460px;margin:0 auto;box-shadow:0 4px 20px rgba(0,0,0,0.15);">
-        <input type="email" id="leadEmail" placeholder="Your email address" required
-          style="flex:1;padding:13px 16px;border:none;font-family:Arial,sans-serif;font-size:14px;outline:none;border-radius:2px 0 0 2px;" />
-        <button type="submit"
-          style="padding:13px 22px;background:#1A2744;color:#fff;border:none;font-family:Arial,sans-serif;font-size:12px;font-weight:bold;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;border-radius:0 2px 2px 0;white-space:nowrap;">
-          Send Me the Guide
-        </button>
+        <input type="email" id="leadEmail" placeholder="Your email address" required style="flex:1;padding:13px 16px;border:none;font-family:Arial,sans-serif;font-size:14px;outline:none;border-radius:2px 0 0 2px;" />
+        <button type="submit" style="padding:13px 22px;background:#1A2744;color:#fff;border:none;font-family:Arial,sans-serif;font-size:12px;font-weight:bold;letter-spacing:0.05em;text-transform:uppercase;cursor:pointer;border-radius:0 2px 2px 0;white-space:nowrap;">Send Me the Guide</button>
       </form>
-      <div id="leadSuccess" style="display:none;color:#fff;font-family:Arial,sans-serif;font-size:14px;margin-top:16px;">
-        ✅ You&#39;re in! Check your inbox for the Hervey Bay Insider Guide.
-      </div>
+      <div id="leadSuccess" style="display:none;color:#fff;font-family:Arial,sans-serif;font-size:14px;margin-top:16px;">&#x2705; You&#39;re in! Check your inbox for the Hervey Bay Insider Guide.</div>
       <p style="font-family:Arial,sans-serif;font-size:11px;color:rgba(255,255,255,0.5);margin-top:14px;">Trusted by locals and visitors alike. No spam, ever.</p>
     </div>
   </div>
@@ -640,58 +469,34 @@
             <p class="form-note-top">Free to list. Always. Published within 48 hours.</p>
             <form id="listForm" onsubmit="submitForm(event)">
               <div class="f-row">
-                <div class="f-group">
-                  <label>Business Name *</label>
-                  <input type="text" name="businessName" placeholder="Your business name" required />
-                </div>
-                <div class="f-group">
-                  <label>Your Name *</label>
-                  <input type="text" name="contactName" placeholder="First & last name" required />
-                </div>
+                <div class="f-group"><label>Business Name *</label><input type="text" name="businessName" placeholder="Your business name" required /></div>
+                <div class="f-group"><label>Your Name *</label><input type="text" name="contactName" placeholder="First & last name" required /></div>
               </div>
               <div class="f-row">
-                <div class="f-group">
-                  <label>Email *</label>
-                  <input type="email" name="email" placeholder="you@example.com" required />
-                </div>
-                <div class="f-group">
-                  <label>Phone</label>
-                  <input type="tel" name="phone" placeholder="04XX XXX XXX" />
-                </div>
+                <div class="f-group"><label>Email *</label><input type="email" name="email" placeholder="you@example.com" required /></div>
+                <div class="f-group"><label>Phone</label><input type="tel" name="phone" placeholder="04XX XXX XXX" /></div>
               </div>
               <div class="f-group">
                 <label>Category *</label>
                 <select name="category" required>
                   <option value="">Select a category...</option>
                   <option>🐋 Whale Watching</option>
-                  <option>🗺️ Tours & Day Trips</option>
-                  <option>🌿 Nature & Parks</option>
+                  <option>🗺️ Tours &amp; Day Trips</option>
+                  <option>🌿 Nature &amp; Parks</option>
                   <option>🏖️ Beaches</option>
                   <option>👨‍👩‍👧 Family Activities</option>
-                  <option>🍽️ Dining & Cafes</option>
+                  <option>🍽️ Dining &amp; Cafes</option>
                   <option>🏄 Water Sports</option>
-                  <option>🎨 Arts & Culture</option>
+                  <option>🎨 Arts &amp; Culture</option>
                   <option>Other</option>
                 </select>
               </div>
               <div class="f-row">
-                <div class="f-group">
-                  <label>Website URL</label>
-                  <input type="url" name="website" placeholder="https://yourwebsite.com.au" />
-                </div>
-                <div class="f-group">
-                  <label>Phone / Address *</label>
-                  <input type="text" name="address" placeholder="Street address, Hervey Bay" required />
-                </div>
+                <div class="f-group"><label>Website URL</label><input type="url" name="website" placeholder="https://yourwebsite.com.au" /></div>
+                <div class="f-group"><label>Phone / Address *</label><input type="text" name="address" placeholder="Street address, Hervey Bay" required /></div>
               </div>
-              <div class="f-group">
-                <label>Description *</label>
-                <textarea name="description" placeholder="Describe your business and what makes it worth visiting..." required></textarea>
-              </div>
-              <div class="f-group">
-                <label>Photo URL (optional)</label>
-                <input type="url" name="photo" placeholder="https://link-to-your-photo.jpg" />
-              </div>
+              <div class="f-group"><label>Description *</label><textarea name="description" placeholder="Describe your business and what makes it worth visiting..." required></textarea></div>
+              <div class="f-group"><label>Photo URL (optional)</label><input type="url" name="photo" placeholder="https://link-to-your-photo.jpg" /></div>
               <button type="submit" class="f-submit">Submit Free Listing</button>
               <p class="f-note">Your details are never shared or sold.</p>
             </form>
@@ -705,7 +510,6 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <div class="wrap">
       <div class="ft">
@@ -734,7 +538,7 @@
         </div>
       </div>
       <div class="ft-bottom">
-        <span>© 2026 LiveHerveyBay.com — All rights reserved</span>
+        <span>&copy; 2026 LiveHerveyBay.com — All rights reserved</span>
         <a href="#">Privacy Policy</a>
       </div>
     </div>
@@ -754,7 +558,6 @@
       document.getElementById('countLabel').textContent = n + ' listing' + (n !== 1 ? 's' : '');
       document.getElementById('noResults').style.display = n === 0 ? 'block' : 'none';
     }
-
     function doSearch() {
       const q = document.getElementById('searchInput').value.trim().toLowerCase();
       if (!q) { filterCat('all', document.querySelector('.cat')); return; }
@@ -777,30 +580,12 @@
       document.getElementById('noResults').style.display = n === 0 ? 'block' : 'none';
       document.getElementById('listings').scrollIntoView({ behavior: 'smooth' });
     }
-
-    document.getElementById('searchInput').addEventListener('keydown', e => {
-      if (e.key === 'Enter') doSearch();
-    });
-
+    document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') doSearch(); });
     document.getElementById('searchInput').addEventListener('input', e => {
-      if (e.target.value.trim() === '') {
-        filterCat('all', document.querySelector('.cat'));
-      } else {
-        doSearch();
-      }
+      if (e.target.value.trim() === '') { filterCat('all', document.querySelector('.cat')); } else { doSearch(); }
     });
-
-    function submitLead(e) {
-      e.preventDefault();
-      document.getElementById('leadForm').style.display = 'none';
-      document.getElementById('leadSuccess').style.display = 'block';
-    }
-
-    function submitForm(e) {
-      e.preventDefault();
-      document.getElementById('listForm').style.display = 'none';
-      document.getElementById('successMsg').style.display = 'block';
-    }
+    function submitLead(e) { e.preventDefault(); document.getElementById('leadForm').style.display = 'none'; document.getElementById('leadSuccess').style.display = 'block'; }
+    function submitForm(e) { e.preventDefault(); document.getElementById('listForm').style.display = 'none'; document.getElementById('successMsg').style.display = 'block'; }
   </script>
 </body>
 </html>
